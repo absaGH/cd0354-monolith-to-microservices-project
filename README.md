@@ -41,15 +41,9 @@ Set the config values for environment variables prefixed with `AWS_` in `set_env
 To run the application first create the necessary docker as follow:
   
     * Remove unused and dangling images
-      ```bash
-      docker image prune --all
-      ```
+      `docker image prune --all`
     * Run this command from the directory where you have the "docker-compose-build.yaml" file present
-      ```bash
-      docker-compose -f docker-compose-build.yaml build --parallel  
-      ```
+      `docker-compose -f docker-compose-build.yaml build --parallel`
     * Finally, you can start the application using
-      ```bash
-      docker-compose up
-      ```
+      `docker-compose up`
     * You can visit `http://localhost:8100` in your web browser to verify that the application is running. You should see a web interface.
