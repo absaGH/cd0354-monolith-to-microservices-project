@@ -38,7 +38,7 @@ Create an AWS S3 bucket. The S3 bucket is used to store images that are displaye
 Set the config values for environment variables prefixed with `AWS_` in `set_env.sh`.
 
 ### 3. Running the Application
-To run the application first create the necessary docker as follow:  
+To run the application first create the necessary docker images as follow:  
 * Remove unused and dangling images
    `docker image prune --all`
 * Run this command from the directory where you have the "docker-compose-build.yaml" file present
