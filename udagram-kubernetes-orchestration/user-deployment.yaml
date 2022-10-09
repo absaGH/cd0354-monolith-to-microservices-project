@@ -5,7 +5,7 @@ metadata:
   labels:
     app: backend-user
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: backend-user
@@ -17,6 +17,13 @@ spec:
       containers:
       - name: backend-user
         image: absamuel/udagram-api-user:v1
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"
         ports:
           - containerPort: 8080
         envFrom:
